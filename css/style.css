@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.item{
+  height: 650px;
+  width: 400px;
+  background-color: #ffffff60;
+  border-radius: 30px;
+  border: 1px solid #00000094;
+  overflow-y: scroll;
+  padding: 30px;
+}
+.all__item{
+  border-radius: 30px;
+  overflow: hidden;
+}
+.product{
+  position: relative;
+  border: 1px solid #00000094;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: rgba(99, 20, 172, 0.329);
+}
+.product__img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content{
+  flex-grow: 1;
+  padding-left: 12px;
+}
+.title{
+  margin: 0;
+  text-align: center;
+}
+.prise,
+.prisedas{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+}
+.btn{
+  border: none;
+  background-color: rgba(70, 25, 128, 0.705);
+  cursor: pointer;
+  color: #fff;
+  padding: 10px;
+}
+.close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 0, 0, 0.685);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+}
+.container{
+  position: relative;
+}
+.all-prise{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
